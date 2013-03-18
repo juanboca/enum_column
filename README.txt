@@ -1,5 +1,8 @@
 Overview
 
+  This gem is a fork from http://github.com/electronick/enum_column
+  The types of the enumerated values were changed to strings.
+
   This gem is an extension to ActiveRecord which enables native support of enumerations in the database schema using the ENUM type in MySQL.
   Currently only MySQL is implemented.
   Tested with Rails 3, for Rails 2 you should better use enum-column plugin (http://rubyforge.org/projects/enum-column/)
@@ -33,7 +36,7 @@ In the model:
 
     validates_columns :severity, :color
 
-  The rest will be handled for you. All enumerated values will be given as symbols.
+  The rest will be handled for you. All enumerated values will be given as strings.
 
     @e = Enumeration.new
     @e.severity = :medium
@@ -43,9 +46,9 @@ You can always use the column reflection to get the list of possible values from
     Enumeration.columns_hash['color'].limit
     or
     @enumeration.column_for_attribute(:color).limit
-    
+
     Will yield: [:red, :blue, :green, :yellow]
-   
+
 
 In views:
 

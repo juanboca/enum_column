@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name = %q{enum_column3}
-  s.version = "0.1.4"
-  s.authors = ['Nick Pohodnya']
+  s.version = "0.0.1"
+  s.authors = ['Nick Pohodnya', 'Juan Blandini']
 
   s.files = [
      "README.txt",
@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
      "lib/enum/schema_statements.rb",
      "lib/enum/validations.rb"
   ]
-  s.homepage = %q{http://github.com/electronick/enum_column}
+  s.homepage = %q{http://github.com/juanboca/enum_column}
   s.require_paths = ["lib"]
   s.summary = %q{Enable enum type for MySQL db.}
   s.test_files = [
