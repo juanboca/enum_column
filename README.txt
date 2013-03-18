@@ -29,6 +29,11 @@ In your schema:
       ...
     end
 
+In a migration:
+
+    def up
+      change_column :table_name, :sex, :enum, :limit => ['Male','Female','Unknown'], :default => 'Unknown'
+    end
 
 In the model:
 
